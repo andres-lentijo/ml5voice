@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#sections-container {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    scroll-snap-align: start;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Secciones con imágenes de fondo */
+#section-1 { background-image: url('img/section1.jpg'); }
+#section-2 { background-image: url('img/section2.jpg'); }
+#section-3 { background-image: url('img/section3.jpg'); }
+#section-4 { background-image: url('img/section4.jpg'); }
+#section-5 { background-image: url('img/section5.jpg'); }
+#section-6 { background-image: url('img/section6.jpg'); }
+#section-7 { background-image: url('img/section7.jpg'); }
+#section-8 { background-image: url('img/section8.jpg'); }
+
+.section h1 {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
